@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+html, body {
+    min-height: 100hv;
+   display: flex;    
+}
+
+body {
+    background-image: url(/assets/2.png)
+}
+
+:root {
+    --primary-color: #9c7af7;
+    --secondary-color: #e8e8e8;
+    font-size: 62.5%;
+}
+
+.page-landing {
+    margin:200px 110px 200px 645px;
+    width: 100%;
+    
+}
+
+.page-landing h1 {
+    color: var(--primary-color);
+    font-size: 40px;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 3px;
+    text-align: right;
+}
+
+.page-landing p {
+    color: #29213b;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 15px;
+    letter-spacing: 3px;
+    text-align: right;
+}

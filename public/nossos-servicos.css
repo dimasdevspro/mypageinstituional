@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+html, body {
+    min-height: 100hv;
+   display: flex;    
+}
+
+body {
+    background-image: url(/assets/3.png)
+}
+
+:root {
+    --primary-color: #9c7af7;
+    --secondary-color: #e8e8e8;
+    --third-color: #29213b;
+
+}
+
+.page-landing .web-services{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 50px 50px;
+    grid-gap: 5px;
+    justify-items: center;
+    align-items: center;
+    margin: 140px 128px;
+}
+.page-landing .web-services img {
+    width: 250px;
+}
+
+.page-landing .web-services h1 {
+    color: var(--third-color);
+    font-size: 17px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.page-landing .web-services p {
+    color: var(--third-color);
+    font-size: 14px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
