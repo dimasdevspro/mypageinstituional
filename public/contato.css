@@ -23,60 +23,33 @@ font-size: 62.5%;
     
 }
 
-.form-more-informations {
-    position: relative;
-}
-
-.form-more-informations form {
-    display: block;
-    margin: 250px;
-    width: 350px;
-    height: auto;
-    position: absolute;
-}
-.page-landing.contact h1 {
-
-}
 .page-landing.contact {
-    position: relative;
+    position: absolute;
+    top: 14rem;
+    right: 10rem;
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    row-gap: 30px;
-    margin-left: 700px;
-    width: 510px;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 3rem;
+    width: 32rem;
     justify-items: end;
     text-align: end;
 }
 
-.page-landing.contact h1 {
+.body-comum h1 {
+    position: absolute;
+    top: 10rem;
+    right: 10rem;
     color: var(--primary-color);
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 4.5em;
     font-weight: 700;
-    letter-spacing: 3px;
+    letter-spacing: 0.1em;
 }
 
 #post, #email, #whatsapp {
-    padding: 10px;
+    padding: 1rem;
 }
 #post img, #email img, #whatsapp img {
-    width: 50px;
-    height: 50px;
+    width: 2.5rem;
+    height: 2.5rem;
 }
-
-#post h3, #email h3, #whatsapp h3 {
-    color: var(--primary-color);
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 1.5em;
-    font-weight: 700;
-    letter-spacing: 3px;
-}
-
-#post p, #email p, #whatsapp p {
-    color: var(--secondary-color);
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 1.3em;
-    font-weight: 400;
-    letter-spacing: 3px;
-    text-decoration: none;
-} 
