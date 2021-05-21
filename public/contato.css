@@ -1,14 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
 
+@media (min-width: 320px), (min-width: 480px) and (max-width: 1023px) {
+    html, body {
+        min-height: 100vh;
+        min-width: 100%;
+        display: flex;    
+        font-size: 62.5%;
+     }
+     
+     html {
+     background-image: url(/assets/5.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     }
+     
+     :root {
+         --primary-color: #9c7af7;
+         --secondary-color: #e8e8e8;
+     
+     }
+     
+     .page-landing {
+         margin:auto;
+         width: min(90%, 112rem);
+         
+     }
+     
+     .page-landing.contact {
+        position: absolute;
+        top: 11rem;
+        right: 1rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 3rem;
+        width: 32rem;
+        justify-items: center;
+        text-align: center;
+     }
+     
+     .body-comum h1 {
+        position: absolute;
+        width: 40rem;
+        top: 3rem;
+        right: -4rem;
+        color: var(--primary-color);
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 4.5em;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-align: center;
+    }
+     
+     #post, #email, #whatsapp {
+         padding: 1rem;
+     }
+     #post img, #email img, #whatsapp img {
+         width: 3.5rem;
+         height: 3.5rem;
+     }
+     }
+
+}
+@media (min-width: 1281px){
 html, body {
    min-height: 100vh;
+   min-width: 100%;
    display: flex;    
+   font-size: 62.5%;
 }
 
-body {
+html {
 background-image: url(/assets/5.png);
-font-size: 62.5%;
+background-repeat: no-repeat;
+background-size: cover;
 }
 
 :root {
@@ -25,7 +90,7 @@ font-size: 62.5%;
 
 .page-landing.contact {
     position: absolute;
-    top: 14rem;
+    top: 17rem;
     right: 10rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -37,11 +102,11 @@ font-size: 62.5%;
 
 .body-comum h1 {
     position: absolute;
-    top: 10rem;
+    top: 8rem;
     right: 10rem;
     color: var(--primary-color);
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 4.5em;
+    font-size: 6.5em;
     font-weight: 700;
     letter-spacing: 0.1em;
 }
@@ -50,6 +115,7 @@ font-size: 62.5%;
     padding: 1rem;
 }
 #post img, #email img, #whatsapp img {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
+}
 }
