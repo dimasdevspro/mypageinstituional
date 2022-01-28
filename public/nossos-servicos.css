@@ -1,36 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
 
-html, body {
-    min-height: 100hv;
-   display: flex;    
-}
-
 body {
-    background-image: url(/assets/3.png)
-}
+    margin: 0;
+    display: flex;
+    font-size: 62.5%;
+  }
 
 :root {
     --primary-color: #9c7af7;
     --secondary-color: #e8e8e8;
     --third-color: #29213b;
-
+    
 }
-
-.page-landing .web-services{
-    width: 100%;
+.page-landing {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/assets/3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.web-services{
+    position: absolute;
+    top: 4rem;
     display: grid;
     grid-template-rows: 1fr 50px 50px;
     grid-gap: 5px;
     justify-items: center;
     align-items: center;
-    margin: 140px 128px;
+    text-align: center;
 }
-.page-landing .web-services img {
-    width: 250px;
+.web-services img {
+    width: 10rem;
 }
 
-.page-landing .web-services h1 {
+.web-services h1 {
     color: var(--third-color);
     font-size: 17px;
     font-family: 'Roboto Condensed', sans-serif;
@@ -38,10 +42,41 @@ body {
     letter-spacing: 3px;
 }
 
-.page-landing .web-services p {
+.web-services p {
     color: var(--third-color);
     font-size: 14px;
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 400;
     letter-spacing: 3px;
+}
+
+@media all and (min-width: 31.25em){
+    .web-services p {
+        padding: 10rem;
+    }
+}
+
+@media all and (min-width: 47.5em){
+    .web-services{
+        top: 10rem;
+    }
+
+    .web-services img{
+        width: 20rem;
+    }
+
+    .web-services h1{
+        font-size: 30px
+    }
+
+    .web-services p{
+        padding: 4rem;
+        font-size:18px;
+    }
+}
+
+@media all and (min-width:64em){
+    .web-services p{
+        padding: 10rem;
+    }
 }

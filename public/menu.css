@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
 
-@charset "UTF-8";
+/* @charset "UTF-8"; */
 /* =CSS Reset */
 /* https://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -25,12 +25,13 @@
 .cf:after {clear: both;}
 .cf {*zoom: 1;}
 body {
-	margin-left:55px; /* espaço à esquerda para a barra vertical vísivel do menu */
+    /* espaço à esquerda para a barra vertical vísivel do menu */
+	/* margin-left:55px;  */
 	font:  62.5%/1.2 'Roboto Condensed', sans-serif;
 	}
 
     #lateral {
-        padding:0 50px 0 0;
+        padding:50px 50px 0 0;
         -moz-transition: all 0.5s ease;
             -webkit-transition: all 0.5s ease;
                 -o-transition: all 0.5s ease;
@@ -39,10 +40,10 @@ body {
         background: #9c7af7;
         height:100%;
         overflow:hidden;
-        width:370px; 
+        width:10.6em; 
         position:fixed;
         top:0;
-        left:-320px;
+        left:-130px;
         }
         #lateral img {
            margin-left:320px;
@@ -55,17 +56,21 @@ body {
         position:fixed;
         left:0px;
         top:0px;
+        width:50px;
+        cursor:pointer;
         }
-    #lateral:hover:before, #lateral:focus:before {
+     #lateral:focus:before {
     left:-500px
         }
     #lateral:hover, #lateral:focus,  #lateral:active  {
-        /* overflow-y:scroll; */
-        -moz-transform: translate(320px, 0);
-            -webkit-transform: translate(320px, 0);
-                -o-transform: translate(320px, 0);
-                    transform: translate(320px, 0);
+       width: 4.6em;
+        -moz-transform: width 2s;
+            -webkit-transform: width 2s;
+                -o-transform: width 2s;
+                    transform: width 2s;
         padding-right:0;
+    left:0em;
+        
         }	
 
         #lateral .box {
@@ -101,42 +106,6 @@ body {
                         -o-transition: all 0.5s ease;
                         transition: all 0.5s ease;
             }
-
-            @media (max-width: 500px) {
-                body {margin-left:0;background-size:100% 28em!important;}
-                #lateral {
-                    padding:0;
-                    -moz-transition: all 0.5s ease;
-                        -webkit-transition: all 0.5s ease;
-                            -o-transition: all 0.5s ease;
-                                transition: all 0.5s ease;
-                    font-size:1.2em;
-                    height:100%;
-                    overflow:auto;
-                    width:100%; 
-                    position:static;
-                    top:0;
-                    left:0;
-                    }
-                #lateral:before {
-                    z-index:1000;
-                    width:0;
-                    text-align:center;
-                    content: "";
-                    font-size:0;
-                    color:#e8e8e8;
-                    position:static;
-                    top:0;
-                    left:0;
-                    display:inline-block; 
-                    }
-                #lateral:hover, #lateral:focus {
-                    overflow:scroll;
-                    -moz-transform: none;
-                        -webkit-transform: none;
-                            -o-transform:none;
-                                transform:none;
-                    }
-                #menu li a {border-bottom:1px solid #ccc;}
-                #menu li:first-child a {border-top:1px solid #ccc;}	
-                }
+            #menu li a {border-bottom:1px solid #ccc;}
+            #menu li:first-child a {border-top:1px solid #ccc;}
+         

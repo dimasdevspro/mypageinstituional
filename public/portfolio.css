@@ -1,33 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
 
-@media (min-width: 320px), (min-width: 480px) and (max-width: 1023px) {
-  /* 320px - smartphones, portrait iPhone, portrait 480x320 phones (Android)
-   480px - smartphones, Android phones, landscape iPhone 
-*/
-
-  html,
   body {
-    min-height: 100vh;
-    min-width: 100%;
+    
     display: flex;
     font-size: 62.5%;
   }
-
-  html {
-    background-image: url(/assets/5.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
   :root {
     --primary-color: #9c7af7;
     --secondary-color: #e8e8e8;
   }
 
   .page-landing {
-    margin: auto;
-    width: min(90%, 112rem);
+    height: 100vh;
+    width: 100vw;
+    background-image: url(/assets/5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
   }
 
   .form-more-informations {
@@ -42,28 +32,28 @@
     position: absolute;
   }
 
-  .page-landing.portfolio {
+  .portfolio {
     position: absolute;
-    top: 12rem;
+    top: 15rem;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 15em);
     row-gap: 2rem;
-    margin-left: 0rem;
-    width: 31rem;
+    margin-left: 1.5rem;
+    width: 19rem;
     justify-items: center;
     text-align: center;
   }
 
-  .page-landing.portfolio h1 {
+  .portfolio h1 {
     position: absolute;
-    top: -10rem;
-    right: -3rem;
+    top: -11.5rem;
+    right: -.5rem;
     color: var(--primary-color);
     font-family: "Roboto Condensed", sans-serif;
-    font-size: 4.5em;
+    font-size: 3.5em;
     font-weight: 700;
     letter-spacing: 3px;
-    width: 37rem;
+    width: 20rem;
     display: grid;
     grid-auto-rows: 1fr;
     text-align: center;
@@ -80,83 +70,47 @@
   #p4 {
     /* grid-column: 2; */
   }
-}
 
-@media (min-width: 1281px) {
- /*
-1281px - hi-res laptops and desktops
-*/
+  @media all and (min-width:31.25em){
 
-  body {
-    min-height: 100vh;
-    min-width: 100%;
-    display: flex;
-    font-size: 62.5%;
-  }
-
-  html {
-    background-image: url(/assets/5.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  :root {
-    --primary-color: #9c7af7;
-    --secondary-color: #e8e8e8;
+    .portfolio {
+      top: 11rem;
+      left: 14rem;
+      justify-items: right;
+    }
+    .portfolio h1 {
+      top: -8.5rem;
+      right: .5rem;
+      width: 34rem;
+      text-align: right;
+    }
   }
 
-  .page-landing {
-    margin: auto;
-    width: min(90%, 112rem);
+  @media all and (min-width:47.5em){
+    .portfolio{
+      justify-items: center;
+      left: 50%;
+      margin-left: -152px;
+    }
+
+    .portfolio h1{
+      width: 21rem;
+      text-align: center;
+      right: -.5rem;
+    }
   }
 
-  .form-more-informations {
-    position: relative;
+  @media all and (min-width:64em){
+    .portfolio {
+      top: 15rem;
+      left: 46rem;
+      justify-items: right;
+          }
+    .portfolio h1 {width: 35rem;}
   }
 
-  .form-more-informations form {
-    display: block;
-    margin: 250px;
-    width: 350px;
-    height: auto;
-    position: absolute;
+  @media all and (min-width:80em){
+    .portfolio {
+      left: 68rem;
+    }
   }
-
-  .page-landing.portfolio {
-    position: absolute;
-    top: 20rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 2rem;
-    margin-left: 86rem;
-    width: 31rem;
-    justify-items: end;
-    text-align: end;
-  }
-
-  .page-landing.portfolio h1 {
-    position: absolute;
-    top: -10rem;
-    right: 0rem;
-    color: var(--primary-color);
-    font-family: "Roboto Condensed", sans-serif;
-    font-size: 6.5em;
-    font-weight: 700;
-    letter-spacing: 3px;
-    width: 86rem;
-    display: grid;
-    grid-auto-rows: 1fr;
-    text-align: end;
-  }
-
-  .project {
-    padding: 10px;
-  }
-  .project img {
-    width: 50px;
-    height: 50px;
-  }
-
-  #p4 {
-    grid-column: 3;
-  }
-}
